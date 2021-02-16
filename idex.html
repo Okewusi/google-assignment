@@ -11,23 +11,25 @@
 </head>
 <body>
     <header>
-        <ul id="top-menu">
-            <li><a href="https://www.google.com/">Gmail</a></li>
-            <li><a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a></li>
-            <li><i id="dropdown-menu" class="material-icons">apps</i></li>
-        </ul>
+        <nav>
+            <a  class= "menu-item" href="/">Gmail</a>
+            <a class= "menu-item" href="/">Images</a>
+            <i id="dropdown-menu" class="material-icons">apps</i>
+            <img id="profile-pic" src="./img/profile.jpg" alt="profile picture">
+        </nav>
     </header>
-    <div id="content">
-        <img src="./img/google-center-img.png" alt="Google" id="google-logo">
-        <form action="search">
-            <div class="search-tools">
-                <i class="fas fa-search"></i><input type="text" id="" ><img src="./img/voice-search-icon.png" alt="voice search" id="voice-search">
+    <main>
+        <section>
+            <img src="./img/google-center-img.png" alt="google logo"><br>
+            <div id="input-wrapper">
+                <input type="text" id="search-box">  
+                <img src="./img/voice-search-icon.png" alt="voice-search-icon"> 
             </div>
-            <div class="submit-btn">
-                <input type="submit" value="Google Search" class="search">
-                <input type="submit" value="I'm feeling lucky" class="search">
+            <div>
+                <button class="custom-btn" type="submit">Google Search</button>
+                <button class="custom-btn" type="submit">I'm Feeling Lucky</button>
             </div>
-        </form>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
