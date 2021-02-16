@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90c0e4c7ff.js" crossorigin="anonymous"></script>
     <title>Google-Clone</title>
 </head>
 <body>
-    
+    <header>
+        <ul id="top-menu">
+            <li><a href="https://www.google.com/">Gmail</a></li>
+            <li><a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a></li>
+            <li><i id="dropdown-menu" class="material-icons">apps</i></li>
+        </ul>
+    </header>
+    <div id="content">
+        <img src="./img/google-center-img.png" alt="Google" id="google-logo">
+        <form action="search">
+            <div class="search-tools">
+                <i class="fas fa-search"></i><input type="text" id="" ><img src="./img/voice-search-icon.png" alt="voice search" id="voice-search">
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="Google Search" class="search">
+                <input type="submit" value="I'm feeling lucky" class="search">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
