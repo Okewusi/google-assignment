@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 16px;
 }
@@ -106,4 +106,109 @@ section{
 .app-item:hover{
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 8px;
+} */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content:flex-end;
+}
+.menu-item, #dropdown-menu, #profile-pic{
+    padding: 8px;
+}
+.menu-item{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+    transform: translateY(5px);
+    cursor: pointer;
+}
+.menu-item:hover{
+    text-decoration: underline;
+}
+#profile-pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-10px);
+}
+#svgs{
+    height:50;
+    width: 50;
+    transform: translateY(-25px);
+    transform: translateX(200px);
+    position: relative;
+    top: -30px;
+    right: -178px;
+    fill: rgba(189, 167, 167,0.3);
+
+}
+#svg:hover {
+    height:50;
+    width: 50;
+    transform: translateY(-25px);
+    transform: translateX(200px);
+    position: relative;
+    top: -30px;
+    right: -178px;
+    fill: rgba(189, 167, 167,0.3);
+}
+#dropdown-menu{
+    color: #000;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+}
+#search-box{
+    width: 582px;
+    color: #222;
+    border: 1px solid #dfe1e5;
+    font-size: 13px;
+    padding: 14px;
+    border-radius: 24px;
+    outline: none;
+}
+#voice{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    transform: translateX(-40px);
+}
+#search{
+    height: 24px;
+    width: 24px;
+    transform: translateX(40px);
+    color: #9aa0a6;
+}
+.custom-btn{
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    background-image: linear-gradient(top #f5f5f5, #f1f1f1);
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0,0,0,0);
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.custom-btn:hover{
+    background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+#btn{
+    padding-top: 20px;
 }

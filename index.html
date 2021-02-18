@@ -12,9 +12,12 @@
 <body>
     <header>
         <nav>
-            <a  class= "menu-item" href="/">Gmail</a>
+            <svg  id="svgs">
+                <circle cx="50" cy="50" r="15" stroke="none" stroke-width="3"/>
+            </svg>
+            <a class= "menu-item" href="/">Gmail</a>
             <a class= "menu-item" href="/">Images</a>
-            <i id="dropdown-menu" class="material-icons">apps</i>
+            <a href="/" id="dropdown-menu" role="button"><i class="material-icons">apps</i></a>
             <img id="profile-pic" src="./img/profile.jpg" alt="profile picture">
         </nav>
     </header>
@@ -22,10 +25,11 @@
         <section>
             <img src="./img/google-center-img.png" alt="google logo"><br>
             <div id="input-wrapper">
+                <i id="search" class="fas fa-search"></i>
                 <input type="text" id="search-box">  
-                <img src="./img/voice-search-icon.png" alt="voice-search-icon"> 
+                <img id='voice' src="./img/voice-search-icon.png" alt="voice-search-icon"> 
             </div>
-            <div>
+            <div id="btn">
                 <button class="custom-btn" type="submit">Google Search</button>
                 <button class="custom-btn" type="submit">I'm Feeling Lucky</button>
             </div>
